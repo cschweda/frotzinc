@@ -60,6 +60,9 @@ To preview with the real headers and 404 handling, use the Netlify CLI: `npx net
 - **Third-party scripts or embeds** (analytics, etc.): add the origin to the
   `Content-Security-Policy` in `netlify.toml` or the browser will block it. For Plausible, add the
   script to the `<head>` and add its host to `script-src` and `connect-src`.
+- **Netlify badge:** the free plan injects a "Powered by Netlify" badge, which needs
+  `'unsafe-inline'` in the CSP. See the comment in `netlify.toml` for how to tighten it again
+  on a paid plan.
 - **Domain change:** update the canonical, `og:url` and `og:image` in `index.html`,
   `robots.txt`, and `sitemap.xml`.
 

@@ -5,12 +5,17 @@
   command = ""
 
 # Security headers for every response.
-# The CSP is strict because the site loads nothing third-party: fonts, styles, script, and images
-# are all served from this origin. If you add analytics or an embed, add its origin here.
+# The site loads nothing third-party: fonts, styles, script, and images are all served from this
+# origin. If you add analytics or an embed, add its origin here.
+#
+# Netlify's free plan injects a "Powered by Netlify" badge (/.netlify/scripts/hud) that renders
+# with inline script and styles in a srcdoc iframe, and whose popover has a form that submits to
+# app.netlify.com. Hence 'unsafe-inline' on script-src/style-src and the form-action origin.
+# On a paid plan without the badge, drop both back to 'self' and form-action to 'none'.
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action https://app.netlify.com; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
