@@ -1,0 +1,41 @@
+# Frotz, Inc. landing page. Static site, no build step: Netlify serves public/ as-is.
+
+[build]
+  publish = "public"
+  command = ""
+
+# Security headers for every response.
+# The CSP is strict because the site loads nothing third-party: fonts, styles, script, and images
+# are all served from this origin. If you add analytics or an embed, add its origin here.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()"
+    Cross-Origin-Opener-Policy = "same-origin"
+
+# Fonts never change in place (rename the file if you ever replace one), so cache them for a year.
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Images and icons: a week in the browser. HTML, CSS, and JS keep Netlify's default
+# (revalidate on every load), so edits show up immediately after a deploy.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/favicon.*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

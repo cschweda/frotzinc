@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>You can't go that way · Frotz, Inc.</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e1116">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/courier-prime-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<script src="/site.js"></script>
+</head>
+<body>
+
+<a class="skip" href="/">Back to the lobby</a>
+<div class="status" role="group" aria-label="Status line">
+  <span aria-hidden="true">Frotz, Inc. — Dark Passage</span>
+  <span class="right">
+    <span class="score" aria-hidden="true">Score: <b id="score">0</b></span>
+    <span class="score" aria-hidden="true">Moves: <b id="moves">1</b></span>
+    <button id="theme" type="button" aria-pressed="false">Light</button>
+  </span>
+</div>
+
+<main class="wrap lost">
+  <header class="hero">
+    <p class="eyebrow">Error 404 · Page not found</p>
+    <h1 class="wordmark">Not <em>here.</em></h1>
+    <p class="tagline">You can't go that way.</p>
+
+    <figure class="transcript-wrap"><figcaption class="sr-only">Transcript</figcaption><pre class="transcript"><span class="cmd">&gt;go to <span id="lost-path">that page</span></span>
+You can't go that way.
+
+<span class="cmd">&gt;look</span>
+It is <span class="lit">dark</span> here. The only exit leads back to the lobby.
+
+<span class="cmd">&gt;</span><span class="cursor" aria-hidden="true"></span></pre></figure>
+
+    <p class="actions"><a href="/">&gt;go to the lobby</a></p>
+  </header>
+
+  <footer>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="https://frotzsmith.com">Frotzsmith</a>
+      <a href="https://frotzlens.com">Frotzlens</a>
+    </div>
+    <div>Frotz, Inc. is a fiction.</div>
+  </footer>
+</main>
+
+</body>
+</html>

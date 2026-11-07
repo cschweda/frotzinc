@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Frotz, Inc. · Instruments for the Z-machine</title>
+<meta name="description" content="Browser-native, open-source tools for writing, building, inspecting, and shipping Z-machine interactive fiction. Frotzsmith, Frotzlens, and more. No installs. No cloud.">
+<link rel="canonical" href="https://frotzinc.com/">
+<meta name="theme-color" content="#0e1116">
+<meta name="color-scheme" content="dark light">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Frotz, Inc.">
+<meta property="og:title" content="Frotz, Inc. · Instruments for the Z-machine">
+<meta property="og:description" content="Everything that used to come in the box, and a few things that didn't. Open-source, browser-native tools for Z-machine interactive fiction.">
+<meta property="og:url" content="https://frotzinc.com/">
+<meta property="og:image" content="https://frotzinc.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Frotz, Inc. wordmark in amber on a dark terminal, with the line: Makers of instruments for the Z-machine">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="/fonts/open-sans-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/courier-prime-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<script src="/site.js"></script>
+</head>
+<body>
+
+<a class="skip" href="#products">Skip to catalog</a>
+<div class="status" role="group" aria-label="Status line">
+  <span aria-hidden="true">Frotz, Inc. — Lobby</span>
+  <span class="right">
+    <span class="score" aria-hidden="true">Score: <b id="score">0</b></span>
+    <span class="score" aria-hidden="true">Moves: <b id="moves">0</b></span>
+    <button id="theme" type="button" aria-pressed="false">Light</button>
+  </span>
+</div>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Makers of instruments for the Z-machine</p>
+    <h1 class="wordmark">Frotz, <em>Inc.</em></h1>
+    <p class="tagline">Everything that used to come in the box, and a few things that didn't.</p>
+    <p class="lede">Browser-native tools for writing, building, inspecting, and shipping interactive fiction for the Z-machine, from new Inform 6 and ZIL games to the story files of the 1980s. Open source. No installs. No cloud.</p>
+
+    <figure class="transcript-wrap"><figcaption class="sr-only">Sample transcript</figcaption><pre class="transcript"><span class="cmd">&gt;frotz lamp</span>
+The brass lantern begins to glow, casting a <span class="lit">warm, steady light</span>.
+
+<span class="cmd">&gt;inventory</span>
+You are carrying:
+  a browser
+  a story file (lantern.z5)
+  a brass lantern (providing light)
+
+<span class="cmd">&gt;</span><span class="cursor" aria-hidden="true"></span></pre></figure>
+  </header>
+
+  <section class="section" aria-labelledby="products">
+    <div class="section-head">
+      <h2 id="products">Product catalog</h2>
+      <span class="note">Fall 2026 edition</span>
+    </div>
+    <ul class="catalog">
+      <li class="item linked">
+        <img class="thumb" src="/images/frotzsmith-card-1200.webp"
+             srcset="/images/frotzsmith-card-480.webp 480w, /images/frotzsmith-card-1200.webp 1200w"
+             sizes="(max-width: 720px) calc(100vw - 32px), 220px"
+             alt="Frotzsmith social card: hammer icon, the name, and the tagline A browser-based Interactive Fiction IDE"
+             width="1200" height="630" loading="lazy" decoding="async">
+        <span class="sku">FI-001</span>
+        <h3 class="name"><a href="https://frotzsmith.com" target="_blank" rel="noopener">Frotzsmith</a></h3>
+        <span class="badge live">Available</span>
+        <p class="desc">A browser IDE for Inform 6 and ZIL. Compiles to Z-machine and Glulx with the real compilers running in WebAssembly, Standard Library and PunyInform profiles, and a skein test runner. The workbench everything else plugs into.</p>
+      </li>
+      <li class="item linked">
+        <div class="thumb thumb-empty" aria-hidden="true"><span>Frotzlens</span><span class="thumb-note">image forthcoming</span></div>
+        <span class="sku">FI-002</span>
+        <h3 class="name"><a href="https://frotzlens.com" target="_blank" rel="noopener">Frotzlens</a></h3>
+        <span class="badge dev">In development</span>
+        <p class="desc">Drop in a story file and see what's inside: header, object tree, dictionary, grammar, routines as cross-referenced disassembly, strings. Fully symbolic when given Inform's debug output. The successor to txd and infodump, in a tab.</p>
+      </li>
+      <li class="item">
+        <div class="thumb thumb-empty" aria-hidden="true"><span>frotzpack</span><span class="thumb-note">image forthcoming</span></div>
+        <span class="sku">FI-003</span>
+        <h3 class="name">frotzpack</h3>
+        <span class="badge plan">Planned</span>
+        <p class="desc">The release step. Blorb packaging, iFiction metadata, period-style cover art, and generated feelies (maps, manuals, hint booklets, in-world documents) from the story file itself.</p>
+      </li>
+      <li class="item">
+        <div class="thumb thumb-empty" aria-hidden="true"><span>frotzlint</span><span class="thumb-note">image forthcoming</span></div>
+        <span class="sku">FI-004</span>
+        <h3 class="name">frotzlint</h3>
+        <span class="badge plan">Planned</span>
+        <p class="desc">A formatter and linter for Inform 6 source. Consistent style, unused-object and unreachable-routine warnings, DM4 conventions. Runs from npx or on save inside Frotzsmith.</p>
+      </li>
+      <li class="item">
+        <div class="thumb thumb-empty" aria-hidden="true"><span>frotzcheck</span><span class="thumb-note">image forthcoming</span></div>
+        <span class="sku">FI-005</span>
+        <h3 class="name">frotzcheck</h3>
+        <span class="badge plan">Planned</span>
+        <p class="desc">Headless regression testing for story files. Runs walkthroughs and skein scripts in CI, diffs transcripts against a golden copy, fails the build on drift. Ships as a GitHub Action.</p>
+      </li>
+      <li class="item">
+        <div class="thumb thumb-empty" aria-hidden="true"><span>frotztrace</span><span class="thumb-note">image forthcoming</span></div>
+        <span class="sku">FI-006</span>
+        <h3 class="name">frotztrace</h3>
+        <span class="badge plan">Planned</span>
+        <p class="desc">A Z-machine debugger. Step through Z-code live, set breakpoints on routines and property changes, watch globals, inspect the object tree mid-game. Source-level stepping inside Frotzsmith, bytecode-level everywhere else.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section about" aria-labelledby="company">
+    <div>
+      <div class="section-head"><h2 id="company">The company</h2></div>
+      <p>Frotz, Inc. is a software company that does not exist, publishing tools that do. It is the umbrella for a family of open-source instruments for the Z-machine, the virtual machine that ran the great text adventures of the early 1980s and that the interactive fiction community has kept alive ever since.</p>
+      <p>Every product runs in the browser, works offline, and keeps your files on your machine. Shared code is published under the <code>@frotzinc</code> scope on npm; the tools you type are published under their own names.</p>
+      <p>The name comes from a spell. In a certain 1983 text adventure, <b>frotz</b> causes an object to give off light.</p>
+    </div>
+    <div class="facts">
+      <dl>
+        <dt>Founded</dt><dd>Never</dd>
+        <dt>Headquarters</dt><dd>West of House</dd>
+        <dt>Employees</dt><dd>1, part-time</dd>
+        <dt>Platform</dt><dd>Z-machine v3–v8, Glulx</dd>
+        <dt>License</dt><dd>MIT, throughout</dd>
+        <dt>npm</dt><dd>@frotzinc/*</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="https://github.com/cschweda" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.npmjs.com/org/frotzinc" target="_blank" rel="noopener">npm</a>
+      <a href="https://frotzsmith.com" target="_blank" rel="noopener">Frotzsmith</a>
+      <a href="https://frotzlens.com" target="_blank" rel="noopener">Frotzlens</a>
+    </div>
+    <div>Frotz, Inc. is a fiction. The Frotz interpreter is the work of its own authors and is not affiliated.</div>
+  </footer>
+</main>
+
+</body>
+</html>

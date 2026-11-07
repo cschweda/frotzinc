@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://frotzinc.com/sitemap.xml

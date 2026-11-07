@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- Source for public/og-image.png (1200x630). Re-render with: ./tools/render-og.sh -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Open Sans"; font-weight: 400 800; src: url("../public/fonts/open-sans-latin-var.woff2") format("woff2"); }
+  @font-face { font-family: "Courier Prime"; font-weight: 400; src: url("../public/fonts/courier-prime-latin-400.woff2") format("woff2"); }
+  @font-face { font-family: "Courier Prime"; font-weight: 700; src: url("../public/fonts/courier-prime-latin-700.woff2") format("woff2"); }
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #0e1116; color: #e6dfcf; font-family: "Open Sans", sans-serif;
+    position: relative; -webkit-font-smoothing: antialiased;
+  }
+  body::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.35) 2px 3px); opacity: .07;
+  }
+  .status {
+    background: #e6dfcf; color: #0e1116; font-family: "Courier Prime", monospace; font-size: 24px;
+    padding: 12px 64px; display: flex; justify-content: space-between;
+  }
+  .main { padding: 72px 64px 0; }
+  .eyebrow { font-family: "Courier Prime", monospace; font-size: 24px; letter-spacing: .08em; text-transform: uppercase; color: #9a9688; margin: 0 0 22px; }
+  h1 { margin: 0; font-size: 150px; font-weight: 800; line-height: 1; letter-spacing: -.025em; }
+  h1 em { font-style: normal; color: #f2a33a; text-shadow: 0 0 40px rgba(242,163,58,.35); }
+  .tag { margin: 34px 0 0; font-size: 40px; font-weight: 500; line-height: 1.25; max-width: 30ch; }
+  .prompt { position: absolute; left: 64px; bottom: 52px; font-family: "Courier Prime", monospace; font-size: 26px; color: #9a9688; }
+  .prompt b { color: #e6dfcf; }
+  .cursor { display: inline-block; width: .6em; height: 1.05em; vertical-align: -.15em; background: #f2a33a; }
+  .rule { position: absolute; left: 64px; right: 64px; bottom: 118px; border-top: 2px solid #2a2f38; }
+</style>
+</head>
+<body>
+  <div class="status"><span>Frotz, Inc. — Lobby</span><span>Score: 10&nbsp;&nbsp;&nbsp;Moves: 1</span></div>
+  <div class="main">
+    <p class="eyebrow">Makers of instruments for the Z-machine</p>
+    <h1>Frotz, <em>Inc.</em></h1>
+    <p class="tag">Everything that used to come in the box, and a few things that didn't.</p>
+  </div>
+  <div class="rule"></div>
+  <div class="prompt"><b>&gt;</b>frotz lamp &nbsp;·&nbsp; frotzinc.com <span class="cursor"></span></div>
+</body>
+</html>
