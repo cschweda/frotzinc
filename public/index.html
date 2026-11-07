@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Frotz, Inc. · Instruments for the Z-machine</title>
-<meta name="description" content="Open-source, browser-native tools for writing, building, inspecting, and shipping Z-machine interactive fiction. Frotzsmith, Frotzlens, and more. No installs.">
+<meta name="description" content="Browser tools for Infocom-style text adventures, the 1980s games you play by typing: write, build, inspect, and ship Z-machine interactive fiction. Open source.">
 <link rel="canonical" href="https://frotzinc.com/">
 <meta name="author" content="Chris Schweda">
 <meta name="theme-color" content="#0e1116">
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Frotz, Inc.">
 <meta property="og:title" content="Frotz, Inc. · Instruments for the Z-machine">
-<meta property="og:description" content="Everything that used to come in the box, and a few things that didn't. Open-source, browser-native tools for Z-machine interactive fiction.">
+<meta property="og:description" content="Everything that used to come in the box, and a few things that didn't. Open-source browser tools for Infocom-style text adventures and the Z-machine.">
 <meta property="og:url" content="https://frotzinc.com/">
 <meta property="og:image" content="https://frotzinc.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -47,7 +47,7 @@
    "@id": "https://frotzinc.com/#webpage",
    "url": "https://frotzinc.com/",
    "name": "Frotz, Inc. · Instruments for the Z-machine",
-   "description": "Open-source, browser-native tools for writing, building, inspecting, and shipping Z-machine interactive fiction. Frotzsmith, Frotzlens, and more. No installs.",
+   "description": "Browser tools for Infocom-style text adventures, the 1980s games you play by typing: write, build, inspect, and ship Z-machine interactive fiction. Open source.",
    "inLanguage": "en",
    "isPartOf": {
     "@id": "https://frotzinc.com/#website"
@@ -168,7 +168,8 @@
     <p class="eyebrow">Makers of instruments for the Z-machine</p>
     <h1 class="wordmark">Frotz, <em>Inc.</em></h1>
     <p class="tagline">Everything that used to come in the box, and a few things that didn't.</p>
-    <p class="lede">Browser-native tools for writing, building, inspecting, and shipping interactive fiction for the Z-machine, from new Inform 6 and ZIL games to the story files of the 1980s. Open source. No installs. No cloud.</p>
+    <p class="lede">In the early 1980s, a company in Cambridge, Massachusetts called Infocom sold computer games made entirely of words. There were no pictures. You typed what you wanted to do, <kbd>open mailbox</kbd>, <kbd>go north</kbd>, <kbd>light lamp</kbd>, and the game wrote back, like a novel that listened. <i>Zork</i>, <i>Enchanter</i>, <i>Planetfall</i>, <i>The Hitchhiker's Guide to the Galaxy</i>: they came in boxes full of maps, letters, and odd little objects, and they were played by hundreds of thousands of people whose computers could barely draw a straight line but whose imaginations had no such limit.</p>
+    <p class="lede">The games outlived the company. The interactive fiction community has kept them playable for forty years and keeps writing new ones. Frotz, Inc. makes tools for that work: browser-native instruments for writing, building, inspecting, and shipping games for the Z-machine, Infocom's virtual machine, from brand-new Inform 6 and ZIL games to the original story files. Open source. No installs. No cloud.</p>
 
     <figure class="transcript-wrap"><figcaption class="sr-only">Sample transcript</figcaption><pre class="transcript"><span class="cmd">&gt;frotz lamp</span>
 The brass lantern begins to glow, casting a <span class="lit">warm, steady light</span>.
@@ -241,12 +242,39 @@ You are carrying:
     </ul>
   </section>
 
+  <section class="section glossary" aria-labelledby="field-guide">
+    <div class="section-head">
+      <h2 id="field-guide">A field guide for the newly arrived</h2>
+      <span class="note">For anyone who has never owned a floppy disk</span>
+    </div>
+    <dl>
+      <dt>Interactive fiction</dt>
+      <dd>A story you play by typing. Also called a text adventure. The graphics are, famously, in your head, where the budget is unlimited.</dd>
+      <dt>Infocom</dt>
+      <dd>The company (1979–1989) that made the best of them, founded by MIT students and staff who had written <i>Zork</i> for fun on a university mainframe. Bought by Activision in 1986 and closed three years later. Their games are why this page exists.</dd>
+      <dt>The Z-machine</dt>
+      <dd>Infocom's secret weapon: a virtual computer. Each game was written once, and a small interpreter ran it on the Apple II, the Commodore 64, the IBM PC, and a dozen other machines that agreed on nothing else. Java made the same promise sixteen years later.</dd>
+      <dt>Story file</dt>
+      <dd>The game itself: a compact file of Z-machine code, like <code>lantern.z5</code>, that any Z-machine interpreter can play. The original Infocom games are story files, and so is anything written in Inform today.</dd>
+      <dt>Feelies</dt>
+      <dd>The physical extras in an Infocom box: a police dossier, a glow-in-the-dark stone, a pair of cardboard Peril Sensitive Sunglasses, a bag of pocket fluff. Part souvenir, part copy protection. See the tagline above.</dd>
+      <dt>Frotz</dt>
+      <dd>A spell from <i>Enchanter</i> (1983) that makes an object give off light. It is also the name of a much-loved Z-machine interpreter by other people, which we admire and are not.</dd>
+      <dt>West of House</dt>
+      <dd>Where <i>Zork</i> begins: an open field beside a white house with a boarded front door, and a small mailbox. Generations of players have stood here. So, now, have you.</dd>
+      <dt>Grue</dt>
+      <dd>What eats you if you wander into the dark without a light. The reason a spell like <b>frotz</b> is worth knowing.</dd>
+      <dt>ZIL and Inform</dt>
+      <dd>ZIL is the language Infocom wrote its games in. Inform, created by Graham Nelson in 1993, is the one the community built to write new ones. Both compile to the Z-machine, and Frotzsmith speaks both.</dd>
+    </dl>
+  </section>
+
   <section class="section about" aria-labelledby="company">
     <div>
       <div class="section-head"><h2 id="company">The company</h2></div>
       <p>Frotz, Inc. is a software company that does not exist, publishing tools that do. It is the umbrella for a family of open-source instruments for the Z-machine, the virtual machine that ran the great text adventures of the early 1980s and that the interactive fiction community has kept alive ever since.</p>
       <p>Every product runs in the browser, works offline, and keeps your files on your machine. Shared code is published under the <code>@frotzinc</code> scope on npm; the tools you type are published under their own names.</p>
-      <p>The name comes from a spell. In a certain 1983 text adventure, <b>frotz</b> causes an object to give off light.</p>
+      <p>The name comes from a spell. In Infocom's <i>Enchanter</i> (1983), <b>frotz</b> causes an object to give off light, which is what these tools are for.</p>
     </div>
     <div class="facts">
       <dl>
@@ -267,7 +295,7 @@ You are carrying:
       <a href="https://frotzsmith.frotzinc.com" target="_blank" rel="noopener">Frotzsmith</a>
       <a href="https://frotzlens.frotzinc.com" target="_blank" rel="noopener">Frotzlens</a>
     </div>
-    <div>Frotz, Inc. is a fiction. The Frotz interpreter is the work of its own authors and is not affiliated.</div>
+    <div>Frotz, Inc. is a fiction. It is not affiliated with Infocom, Activision, or the authors of the Frotz interpreter. Zork, Enchanter, and other Infocom titles are trademarks of their respective owners.</div>
   </footer>
 </main>
 

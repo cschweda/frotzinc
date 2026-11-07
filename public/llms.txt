@@ -1,8 +1,8 @@
 # Frotz, Inc.
 
-> Frotz, Inc. is the umbrella for a family of open-source (apps under GPL-3.0-or-later, @frotzinc/* libraries under MIT), browser-native tools for writing, building, inspecting, and shipping interactive fiction for the Z-machine, the virtual machine behind the classic 1980s text adventures. Every tool runs in the browser, works offline, and keeps files on the user's machine. Shared code is published on npm under the @frotzinc scope.
+> Frotz, Inc. makes open-source (apps under GPL-3.0-or-later, @frotzinc/* libraries under MIT), browser-native tools for interactive fiction in the tradition of Infocom, the 1980s company behind Zork, Enchanter, and The Hitchhiker's Guide to the Galaxy: text adventures played by typing commands. The tools write, build, inspect, and ship games for the Z-machine, Infocom's virtual machine, from new Inform 6 and ZIL games to the original story files. Every tool runs in the browser, works offline, and keeps files on the user's machine. Shared code is published on npm under the @frotzinc scope.
 
-"Frotz, Inc." is a playful fiction: there is no company, just one part-time developer. It is not affiliated with the Frotz interpreter or its authors. The name comes from the spell in a 1983 text adventure that makes an object give off light.
+"Frotz, Inc." is a playful fiction: there is no company, just one part-time developer. It is not affiliated with Infocom, Activision, or the Frotz interpreter and its authors. The name comes from the spell in Infocom's Enchanter (1983) that makes an object give off light.
 
 ## Products
 
