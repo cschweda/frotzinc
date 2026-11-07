@@ -128,7 +128,7 @@
       "name": "Frotzlens",
       "license": "https://spdx.org/licenses/GPL-3.0-or-later.html",
       "url": "https://frotzlens.frotzinc.com",
-     "image": "https://frotzinc.com/images/frotzlens-card-1200.webp",
+      "image": "https://frotzinc.com/images/frotzlens-card-1200.webp",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Web browser",
       "publisher": {
@@ -136,6 +136,23 @@
       },
       "creativeWorkStatus": "Available",
       "description": "A browser-based story-file inspector for the Z-machine: header, object tree, dictionary, grammar, and cross-referenced disassembly."
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "SoftwareApplication",
+      "name": "frotzplay",
+      "url": "https://frotzplay.frotzinc.com",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Web browser",
+      "image": "https://frotzinc.com/images/frotzplay-card-1200.webp",
+      "publisher": {
+       "@id": "https://frotzinc.com/#org"
+      },
+      "creativeWorkStatus": "Available",
+      "description": "An accessible Z-machine player: play interactive fiction in your browser, built for screen readers and strict security policies."
      }
     }
    ]
@@ -211,30 +228,41 @@ You are carrying:
         <span class="badge live">Now available</span>
         <p class="desc">Drop in a story file and see what's inside: header, object tree, dictionary, grammar, routines as cross-referenced disassembly, strings. Fully symbolic when given Inform's debug output. The successor to txd and infodump, in a tab.</p>
       </li>
+      <li class="item linked">
+        <img class="thumb" src="/images/frotzplay-card-1200.webp"
+             srcset="/images/frotzplay-card-480.webp 480w, /images/frotzplay-card-1200.webp 1200w"
+             sizes="(max-width: 720px) calc(100vw - 32px), 220px"
+             alt="frotzplay social card: an amber tile with a play triangle and a prompt cursor beside the words Play Z-machine stories in your browser, over a faded game transcript"
+             width="1200" height="630" loading="lazy" decoding="async">
+        <span class="sku">FI-003</span>
+        <h3 class="name"><a href="https://frotzplay.frotzinc.com" target="_blank" rel="noopener">frotzplay</a></h3>
+        <span class="badge live">Now available</span>
+        <p class="desc">Drop in a story file and play. An accessible Z-machine player for the browser, built for screen readers and strict security policies. Nothing is uploaded.</p>
+      </li>
       <li class="item">
         <div class="thumb thumb-empty" aria-hidden="true"><span>frotztrace</span><span class="thumb-note">image forthcoming</span></div>
-        <span class="sku">FI-003</span>
+        <span class="sku">FI-004</span>
         <h3 class="name">frotztrace</h3>
         <span class="badge dev">In development</span>
         <p class="desc">A Z-machine debugger. Step through Z-code live, set breakpoints on routines and property changes, watch globals, inspect the object tree mid-game. Source-level stepping inside Frotzsmith, bytecode-level everywhere else.</p>
       </li>
       <li class="item">
         <div class="thumb thumb-empty" aria-hidden="true"><span>frotzpack</span><span class="thumb-note">image forthcoming</span></div>
-        <span class="sku">FI-004</span>
+        <span class="sku">FI-005</span>
         <h3 class="name">frotzpack</h3>
         <span class="badge plan">Planned</span>
         <p class="desc">The release step. Blorb packaging, iFiction metadata, period-style cover art, and generated feelies (maps, manuals, hint booklets, in-world documents) from the story file itself.</p>
       </li>
       <li class="item">
         <div class="thumb thumb-empty" aria-hidden="true"><span>frotzlint</span><span class="thumb-note">image forthcoming</span></div>
-        <span class="sku">FI-005</span>
+        <span class="sku">FI-006</span>
         <h3 class="name">frotzlint</h3>
         <span class="badge plan">Planned</span>
         <p class="desc">A formatter and linter for Inform 6 source. Consistent style, unused-object and unreachable-routine warnings, DM4 conventions. Runs from npx or on save inside Frotzsmith.</p>
       </li>
       <li class="item">
         <div class="thumb thumb-empty" aria-hidden="true"><span>frotzcheck</span><span class="thumb-note">image forthcoming</span></div>
-        <span class="sku">FI-006</span>
+        <span class="sku">FI-007</span>
         <h3 class="name">frotzcheck</h3>
         <span class="badge plan">Planned</span>
         <p class="desc">Headless regression testing for story files. Runs walkthroughs and skein scripts in CI, diffs transcripts against a golden copy, fails the build on drift. Ships as a GitHub Action.</p>
@@ -294,6 +322,7 @@ You are carrying:
       <a href="https://www.npmjs.com/org/frotzinc" target="_blank" rel="noopener">npm</a>
       <a href="https://frotzsmith.frotzinc.com" target="_blank" rel="noopener">Frotzsmith</a>
       <a href="https://frotzlens.frotzinc.com" target="_blank" rel="noopener">Frotzlens</a>
+      <a href="https://frotzplay.frotzinc.com" target="_blank" rel="noopener">frotzplay</a>
     </div>
     <div>Frotz, Inc. is a fiction. It is not affiliated with Infocom, Activision, or the authors of the Frotz interpreter. Zork, Enchanter, and other Infocom titles are trademarks of their respective owners.</div>
   </footer>

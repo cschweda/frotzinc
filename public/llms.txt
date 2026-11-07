@@ -8,6 +8,7 @@
 
 - [Frotzsmith](https://frotzsmith.frotzinc.com): Now available. A browser IDE for Inform 6 and ZIL. Compiles to Z-machine and Glulx with the real compilers running in WebAssembly, supports Standard Library and PunyInform profiles, and includes a skein test runner.
 - [Frotzlens](https://frotzlens.frotzinc.com): Now available. Drop in a story file to inspect its header, object tree, dictionary, grammar, routines (as cross-referenced disassembly), and strings; fully symbolic when given Inform's debug output. A browser successor to txd and infodump.
+- [frotzplay](https://frotzplay.frotzinc.com): Now available. An accessible Z-machine player: play interactive fiction in the browser, built for screen readers and strict security policies. Nothing is uploaded.
 
 ## In development
 
