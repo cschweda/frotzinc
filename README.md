@@ -19,6 +19,7 @@ public/               everything Netlify serves (the publish directory)
   favicon.svg/.ico    lantern icon; apple-touch-icon.png for iOS home screens
   og-image.png        1200x630 social card for link previews
   robots.txt, sitemap.xml
+  llms.txt            plain-language site summary for LLMs (llmstxt.org)
 tools/
   og-image.html       source for og-image.png
   render-og.sh        re-renders og-image.png with headless Chrome
@@ -53,10 +54,12 @@ To preview with the real headers and 404 handling, use the Netlify CLI: `npx net
 ## Common edits
 
 - **Adding a product:** copy an `<li class="item">` in `index.html`. Use `class="item linked"`
-  and an `<a>` in the `<h3>` once it has a URL. For a thumbnail, export a 1200x630 card and make
+  and an `<a>` in the `<h3>` once it has a URL, and add it to the JSON-LD `ItemList` and
+  `llms.txt`. For a thumbnail, export a 1200x630 card and make
   WebPs: `cwebp -q 82 card.png -o name-1200.webp && cwebp -q 82 -resize 480 0 card.png -o name-480.webp`.
 - **Social card:** edit `tools/og-image.html`, then run `./tools/render-og.sh`.
-- **Sitemap:** bump `<lastmod>` in `public/sitemap.xml` when the page content changes.
+- **Dates:** when the page content changes, bump `<lastmod>` in `public/sitemap.xml` and
+  `dateModified` in the JSON-LD in `index.html`. Keep `public/llms.txt` in step with the catalog.
 - **Third-party scripts or embeds** (analytics, etc.): add the origin to the
   `Content-Security-Policy` in `netlify.toml` or the browser will block it. For Plausible, add the
   script to the `<head>` and add its host to `script-src` and `connect-src`.
