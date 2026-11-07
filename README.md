@@ -60,9 +60,10 @@ To preview with the real headers and 404 handling, use the Netlify CLI: `npx net
 - **Social card:** edit `tools/og-image.html`, then run `./tools/render-og.sh`.
 - **Dates:** when the page content changes, bump `<lastmod>` in `public/sitemap.xml` and
   `dateModified` in the JSON-LD in `index.html`. Keep `public/llms.txt` in step with the catalog.
-- **Third-party scripts or embeds** (analytics, etc.): add the origin to the
-  `Content-Security-Policy` in `netlify.toml` or the browser will block it. For Plausible, add the
-  script to the `<head>` and add its host to `script-src` and `connect-src`.
+- **Analytics:** Plausible is loaded in the `<head>` of `index.html` and `404.html`, and
+  `https://plausible.io` is allowed in the CSP's `script-src` and `connect-src`.
+- **Third-party scripts or embeds:** add the origin to the `Content-Security-Policy` in
+  `netlify.toml` or the browser will block it.
 - **Netlify badge:** the free plan injects a "Powered by Netlify" badge, which needs
   `'unsafe-inline'` in the CSP. See the comment in `netlify.toml` for how to tighten it again
   on a paid plan.
