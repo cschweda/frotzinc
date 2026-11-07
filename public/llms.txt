@@ -9,12 +9,15 @@
 - [Frotzsmith](https://frotzsmith.frotzinc.com): Now available. A browser IDE for Inform 6 and ZIL. Compiles to Z-machine and Glulx with the real compilers running in WebAssembly, supports Standard Library and PunyInform profiles, and includes a skein test runner.
 - [Frotzlens](https://frotzlens.frotzinc.com): Now available. Drop in a story file to inspect its header, object tree, dictionary, grammar, routines (as cross-referenced disassembly), and strings; fully symbolic when given Inform's debug output. A browser successor to txd and infodump.
 
+## In development
+
+- frotztrace: Next up, no public URL yet. Z-machine debugger with breakpoints, watches, and object-tree inspection; source-level stepping inside Frotzsmith.
+
 ## Planned
 
 - frotzpack: Release packaging. Blorb, iFiction metadata, cover art, and generated feelies (maps, manuals, hint booklets) from the story file.
 - frotzlint: Formatter and linter for Inform 6 source, runnable via npx or on save inside Frotzsmith.
 - frotzcheck: Headless regression testing for story files in CI; diffs transcripts against a golden copy. Ships as a GitHub Action.
-- frotztrace: Z-machine debugger with breakpoints, watches, and object-tree inspection; source-level stepping inside Frotzsmith.
 
 ## Links
 
