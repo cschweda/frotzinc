@@ -1,8 +1,8 @@
-# Frotz, Inc.
+# frotz, Inc.
 
-The landing page for Frotz, Inc., the umbrella for a family of open-source, browser-native tools
-for Z-machine interactive fiction: [Frotzsmith](https://frotzsmith.frotzinc.com),
-[Frotzlens](https://frotzlens.frotzinc.com),
+The landing page for frotz, Inc., the umbrella for a family of open-source, browser-native tools
+for Z-machine interactive fiction: [frotzsmith](https://frotzsmith.frotzinc.com),
+[frotzlens](https://frotzlens.frotzinc.com),
 [frotzplay](https://frotzplay.frotzinc.com), and the tools still to come.
 
 Live at **https://frotzinc.com**.

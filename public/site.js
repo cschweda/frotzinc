@@ -1,4 +1,4 @@
-/* Frotz, Inc. site script. Loaded synchronously in <head> so the saved theme applies before
+/* frotz, Inc. site script. Loaded synchronously in <head> so the saved theme applies before
    first paint (no dark-to-light flash); everything that touches the page waits for the DOM. */
 (function () {
   var root = document.documentElement;

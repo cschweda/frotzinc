@@ -1,4 +1,4 @@
-# Frotz, Inc. landing page. Static site, no build step: Netlify serves public/ as-is.
+# frotz, Inc. landing page. Static site, no build step: Netlify serves public/ as-is.
 
 [build]
   publish = "public"

@@ -1,23 +1,23 @@
-# Frotz, Inc.
+# frotz, Inc.
 
-> Frotz, Inc. makes open-source (apps under GPL-3.0-or-later, @frotzinc/* libraries under MIT), browser-native tools for interactive fiction in the tradition of Infocom, the 1980s company behind Zork, Enchanter, and The Hitchhiker's Guide to the Galaxy: text adventures played by typing commands. The tools write, build, inspect, and ship games for the Z-machine, Infocom's virtual machine, from new Inform 6 and ZIL games to the original story files. Every tool runs in the browser, works offline, and keeps files on the user's machine. Shared code is published on npm under the @frotzinc scope.
+> frotz, Inc. makes open-source (apps under GPL-3.0-or-later, @frotzinc/* libraries under MIT), browser-native tools for interactive fiction in the tradition of Infocom, the 1980s company behind Zork, Enchanter, and The Hitchhiker's Guide to the Galaxy: text adventures played by typing commands. The tools write, build, inspect, and ship games for the Z-machine, Infocom's virtual machine, from new Inform 6 and ZIL games to the original story files. Every tool runs in the browser, works offline, and keeps files on the user's machine. Shared code is published on npm under the @frotzinc scope.
 
-"Frotz, Inc." is a playful fiction: there is no company, just one part-time developer. It is not affiliated with Infocom, Activision, or the Frotz interpreter and its authors. The name comes from the spell in Infocom's Enchanter (1983) that makes an object give off light.
+"frotz, Inc." is a playful fiction: there is no company, just one part-time developer. It is not affiliated with Infocom, Activision, or the frotz interpreter and its authors. The name comes from the spell in Infocom's Enchanter (1983) that makes an object give off light.
 
 ## Products
 
-- [Frotzsmith](https://frotzsmith.frotzinc.com): Now available. A browser IDE for Inform 6 and ZIL. Compiles to Z-machine and Glulx with the real compilers running in WebAssembly, supports Standard Library and PunyInform profiles, and includes a skein test runner.
-- [Frotzlens](https://frotzlens.frotzinc.com): Now available. Drop in a story file to inspect its header, object tree, dictionary, grammar, routines (as cross-referenced disassembly), and strings; fully symbolic when given Inform's debug output. A browser successor to txd and infodump.
+- [frotzsmith](https://frotzsmith.frotzinc.com): Now available. A browser IDE for Inform 6 and ZIL. Compiles to Z-machine and Glulx with the real compilers running in WebAssembly, supports Standard Library and PunyInform profiles, and includes a skein test runner.
+- [frotzlens](https://frotzlens.frotzinc.com): Now available. Drop in a story file to inspect its header, object tree, dictionary, grammar, routines (as cross-referenced disassembly), and strings; fully symbolic when given Inform's debug output. A browser successor to txd and infodump.
 - [frotzplay](https://frotzplay.frotzinc.com): Now available. An accessible Z-machine player: play interactive fiction in the browser, built for screen readers and strict security policies. Nothing is uploaded.
 
 ## In development
 
-- frotztrace: Next up, no public URL yet. Z-machine debugger with breakpoints, watches, and object-tree inspection; source-level stepping inside Frotzsmith.
+- frotztrace: Next up, no public URL yet. Z-machine debugger with breakpoints, watches, and object-tree inspection; source-level stepping inside frotzsmith.
 
 ## Planned
 
 - frotzpack: Release packaging. Blorb, iFiction metadata, cover art, and generated feelies (maps, manuals, hint booklets) from the story file.
-- frotzlint: Formatter and linter for Inform 6 source, runnable via npx or on save inside Frotzsmith.
+- frotzlint: Formatter and linter for Inform 6 source, runnable via npx or on save inside frotzsmith.
 - frotzcheck: Headless regression testing for story files in CI; diffs transcripts against a golden copy. Ships as a GitHub Action.
 
 ## Links
