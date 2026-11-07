@@ -1,6 +1,6 @@
 # Frotz, Inc.
 
-> Frotz, Inc. is the umbrella for a family of open-source (apps under GPLv3, shared libraries under MIT), browser-native tools for writing, building, inspecting, and shipping interactive fiction for the Z-machine, the virtual machine behind the classic 1980s text adventures. Every tool runs in the browser, works offline, and keeps files on the user's machine. Shared code is published on npm under the @frotzinc scope.
+> Frotz, Inc. is the umbrella for a family of open-source (apps under GPL-3.0-or-later, @frotzinc/* libraries under MIT), browser-native tools for writing, building, inspecting, and shipping interactive fiction for the Z-machine, the virtual machine behind the classic 1980s text adventures. Every tool runs in the browser, works offline, and keeps files on the user's machine. Shared code is published on npm under the @frotzinc scope.
 
 "Frotz, Inc." is a playful fiction: there is no company, just one part-time developer. It is not affiliated with the Frotz interpreter or its authors. The name comes from the spell in a 1983 text adventure that makes an object give off light.
 
