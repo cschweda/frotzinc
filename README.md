@@ -1,5 +1,7 @@
 # frotz, Inc.
 
+[![frotz, Inc. wordmark in amber on a dark terminal, with the line: Makers of instruments for the Z-machine](public/og-image.png)](https://frotzinc.com)
+
 The landing page for frotz, Inc., the umbrella for a family of open-source, browser-native tools
 for Z-machine interactive fiction: [frotzsmith](https://frotzsmith.frotzinc.com),
 [frotzlens](https://frotzlens.frotzinc.com),
