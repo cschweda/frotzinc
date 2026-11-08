@@ -3,6 +3,15 @@
 [build]
   publish = "public"
   command = ""
+  # A production deploy costs Netlify credits; a Deploy Preview does not. Skip the
+  # build when a push changes only files the site is not built from, so a README or
+  # docs commit to main doesn't spend a production deploy. Netlify skips when this
+  # exits 0 and builds otherwise. The first test always builds when there is no
+  # previous deploy to compare with (Netlify sets CACHED_COMMIT_REF to COMMIT_REF
+  # then, the diff would be empty, and the deploy would be skipped).
+  # Not built from: the README, docs/ and tools/ (the og-image renderer; its output is
+  # committed under public/), and .github/.
+  ignore = "test \"$CACHED_COMMIT_REF\" = \"$COMMIT_REF\" && exit 1; git diff --quiet \"$CACHED_COMMIT_REF\" \"$COMMIT_REF\" -- . \":(exclude)README.md\" \":(exclude)docs\" \":(exclude)tools\" \":(exclude).github\""
 
 # Security headers for every response.
 # The site loads nothing third-party: fonts, styles, script, and images are all served from this
